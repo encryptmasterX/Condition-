@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BRX EARN - Terms & Conditions</title>
   <style>
+    /* Gradient Background Animation */
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000000);
+      background: linear-gradient(-45deg, #1f1c2c, #928dab, #2c3e50, #000000);
       background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
+      animation: gradientBG 12s ease infinite;
       color: white;
       padding: 40px 20px;
     }
@@ -21,14 +22,22 @@
       100% { background-position: 0% 50%; }
     }
 
+    /* Container */
     .container {
       max-width: 900px;
       margin: auto;
       background: rgba(255, 255, 255, 0.06);
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.15);
       backdrop-filter: blur(6px);
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
     }
 
     h1, h2 {
@@ -36,18 +45,34 @@
       text-shadow: 1px 1px 4px #000;
     }
 
+    ul {
+      padding-left: 20px;
+    }
+
     p, li {
       line-height: 1.6;
       margin-bottom: 12px;
     }
 
-    ul {
-      padding-left: 20px;
+    .title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #00ffc8;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    @media (max-width: 600px) {
+      .title {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
+    <div class="title">BRX EARN</div>
     <h1>Terms and Conditions</h1>
 
     <h2>Introduction and Definitions</h2>
